@@ -10,4 +10,13 @@ public class FrontOfStageTicket extends Ticket {
         super(bandName, time, price);
         this.cheaperPrice = cheaperPrice;
     }
+
+    @Override
+    public int entryTime() {
+        return super.entryTime() - 1;
+    }
+
+    public int getCheaperPrice() {
+        return cheaperPrice;
+    }
 }

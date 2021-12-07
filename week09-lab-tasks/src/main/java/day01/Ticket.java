@@ -18,4 +18,16 @@ public class Ticket {
     public int entryTime() {
         return time.getHour() - 1;
     }
+
+    public String getBandName() {
+        return bandName;
+    }
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 }

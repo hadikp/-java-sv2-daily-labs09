@@ -7,4 +7,8 @@ public class Person {
     public Person(Ticket ticket) {
         this.ticket = ticket;
     }
+
+    public Ticket getTicket() {
+        return ticket;
+    }
 }
