@@ -13,7 +13,8 @@ class StringListsTest {
     void testShortestWords() {
         List<String> words = Arrays.asList("aaa", "aa", "bb", "cccc", "dd");
         StringLists stringLists = new StringLists();
-        System.out.println(stringLists.shortestWords(words));
+        List<String> result = Arrays.asList("aa", "bb", "dd");
+        assertEquals(result, stringLists.shortestWords(words));
 
     }
 
