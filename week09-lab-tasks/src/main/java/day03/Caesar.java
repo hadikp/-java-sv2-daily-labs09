@@ -15,7 +15,7 @@ public class Caesar extends Encryption {
         for (int i = 0; i < input.length(); i++) {
             word = input.charAt(i) + offset;
             if (word > 122) {
-                word = word - 122 + 96;
+                word = word - 122 + 96; //z ascii kódja: 122
             }
             st.append(Character.toChars(word));
         }
